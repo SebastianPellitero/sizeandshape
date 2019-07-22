@@ -25,7 +25,7 @@ class Details extends Component {
           <Typography gutterBottom variant="h6">
             Point Number {index + 1}
           </Typography>
-          <p>{"{"} X: {point.x}, Y: {point.y}{"}"}</p>
+          <p>{"{"} X: {Math.trunc(point.x)}, Y: {Math.trunc(point.y)}{"}"}</p>
         </Grid>
       ));
     }
