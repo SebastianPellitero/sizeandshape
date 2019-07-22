@@ -10,22 +10,27 @@ import PropTypes from "prop-types";
 import DetailsWrapper from "./details.style";
 // Components
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-
-const showPoints = parallelogram => {
-  if (parallelogram) {
-    return parallelogram.vertices.map((point, index) => (
-      <Grid item xs={12} key={index}>
-        <Typography gutterBottom variant="h6">
-          Point Number {index + 1}
-        </Typography>
-        <p>{"{"} X: {point.x}, Y: {point.y}{"}"}</p>
-      </Grid>
-    ));
-  }
-};
+import Typography from "@material-ui/core/Typography"; 
 
 class Details extends Component {
+  /**
+   * Returns the markup for every vertice to display on details section
+   * @function showPoints
+   * @param {Object} parallelogram - object with the vertices of the parallelogram
+   */
+  showPoints = parallelogram => {
+    if (parallelogram) {
+      return parallelogram.vertices.map((point, index) => (
+        <Grid item xs={12} key={index}>
+          <Typography gutterBottom variant="h6">
+            Point Number {index + 1}
+          </Typography>
+          <p>{"{"} X: {point.x}, Y: {point.y}{"}"}</p>
+        </Grid>
+      ));
+    }
+  };
+
   render() {
     const { parallelogram, circle } = this.props;
     if (parallelogram.vertices.length < 1) {
@@ -48,7 +53,7 @@ class Details extends Component {
               Parallelogram
             </Typography>
           </Grid>
-          {showPoints(parallelogram)}
+          {this.showPoints(parallelogram)}
           {parallelogram.vertices.length === 4 && (
             <>
               <Grid item xs={12}>

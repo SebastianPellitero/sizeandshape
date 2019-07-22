@@ -69,16 +69,6 @@ class About extends Component {
 }
 
 /*------------------------------------------------*/
-/* PROP TYPES
-/*------------------------------------------------*/
-About.propTypes = {
-  // Required
-  // Not required
-};
-
-About.defaultProps = {};
-
-/*------------------------------------------------*/
 /* EXPORTS
 /*------------------------------------------------*/
 export default About;

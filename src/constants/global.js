@@ -1,7 +1,7 @@
 import { THEME_KEYS } from "./theme";
 
 export const CUSTOM_DOT = {
-  color: "#d22c2c",
+  color: THEME_KEYS.brightRed,
   radius: 5.5,
   borderColor: THEME_KEYS.brightRed
 };

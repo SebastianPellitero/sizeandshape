@@ -75,7 +75,8 @@ class Canvas extends Component {
     const distanceY = coordinates.y - circle.y;
     //return true if x^2 + y^2 <= radius squared.
     return (
-      distanceX * distanceX + distanceY * distanceY <= CUSTOM_DOT.radius * CUSTOM_DOT.radius
+      distanceX * distanceX + distanceY * distanceY <=
+      CUSTOM_DOT.radius * CUSTOM_DOT.radius
     );
   };
 
@@ -283,7 +284,8 @@ Canvas.propTypes = {
 };
 
 Canvas.defaultProps = {
-  parallelogram: {}
+  parallelogram: {},
+  circle: {}
 };
 
 /*------------------------------------------------*/

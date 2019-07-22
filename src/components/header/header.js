@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 /*------------------------------------------------*/
 // Styles
 import { AppBarWrapper, ToolbarWrapper } from "./header.style";
-// Icons
 // Constants
 import { ROOT, ABOUT, TUTORIAL } from "../../constants/routes";
 // Components
