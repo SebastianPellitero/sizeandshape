@@ -2,7 +2,7 @@
 /* LIBRARIES
 /*------------------------------------------------*/
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 /*------------------------------------------------*/
 /* INTERNAL DEPENDENCIES
 /*------------------------------------------------*/
@@ -15,7 +15,7 @@ import Tutorial from "./components/tutorial/tutorial";
 import { ROOT, ABOUT, TUTORIAL } from "./constants/routes";
 
 const AppRouter = () => (
-  <Router>
+  <Router basename="/">
     <Header />
     <Switch>
       <Route path={ROOT} exact component={CanvasBoard} />
