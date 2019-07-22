@@ -1,8 +1,9 @@
-##Size and Shape
+## Size and Shape
 
 The objective of this program is to draw simple shapes and interact with each other in real time. In order to make this interactive it use complex trigonometric formulas such as the Pythagorean theorem and Heron’s formula.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://sebastianpellitero.github.io/sizeandshape/)
+
 
 ## Available Scripts
 
@@ -29,3 +30,4 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
